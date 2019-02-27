@@ -37,7 +37,7 @@ export const ALL_ENTRIES: IEntry[] = [
     ]
   }, 
   {
-    'ring': 'EXPERT',
+    'ring': 'BASIC',
     'label': 'Kubernetes',
     'link': 'https://kubernetes.io/',
     'tags': [
@@ -47,9 +47,21 @@ export const ALL_ENTRIES: IEntry[] = [
       'design',
       'graph',
     ]
+  }, 
+  {
+    'ring': 'SKILLED',
+    'label': 'Helm',
+    'link': 'https://helm.sh/',
+    'tags': [
+      'q1-infrastructure',
+      'language',
+      'development',
+      'design',
+      'graph',
+    ]
   },
   {
-    'ring': 'BASIC',
+    'ring': 'NONE',
     'label': 'Go',
     'link': 'https://golang.org/',
     'tags': [

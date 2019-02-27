@@ -18,7 +18,7 @@ const Description = () => (
             <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
             <td>
                  <Typography variant="body2">
-                  <strong>SKILLED</strong> &mdash; Capable and experienced, need a little help from Google. 
+                  <strong>SKILLED</strong> &mdash; Capable need a little help from Google. (Still Learning)
                   </Typography>
             </td>
         </tr>
