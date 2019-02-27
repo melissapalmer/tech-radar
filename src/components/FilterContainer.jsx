@@ -16,8 +16,7 @@ const FilterContainer = ({caption, tags, selectedTags, selectTags}) => {
   })
   return (
     <>
-      <Typography variant="h6">{caption}:</Typography>
-      <Tag
+      <Typography variant="h6">{caption}:</Typography><Tag
         tag='all'
         onClick={() => {
           selectTags([]);

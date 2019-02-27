@@ -1,11 +1,11 @@
 {
-  "name": "yankee-tech-radar",
+  "name": "melissa-tech-radar",
   "version": "2019.1.1",
   "description": "Visualizing technology choices",
   "homepage": "/tech-radar",
-  "repository": "https://github.com/yaneek/tech-radar.git",
+  "repository": "https://github.com/melissapalmer/tech-radar.git",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "directories": {
     "doc": "docs"
   },

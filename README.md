@@ -1,3 +1,5 @@
+https://blog.jdriven.com/2018/10/easily-build-your-own-tech-radar/
+
 # Technology radar
 
 This tool shows my skills and directions in which I intend to develop.

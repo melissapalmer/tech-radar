@@ -80,20 +80,14 @@ export class AppContainer extends React.Component<IAppProps, IAppState>{
 
   render = () => (
     <>
-      <Header>
-        <FilterContainer
-          caption="Filter by tag"
-          tags={this.state.availableTags.sort()}
-          selectedTags={this.state.selectedTags}
-          selectTags={this.selectTags}
-        />
+           
         <FilterContainer
           caption="Filter by ring"
           tags={Object.keys(this.state.availableRingFilters)}
           selectedTags={this.state.selectedRingFilters}
           selectTags={this.selectRings}
         />
-      </Header>
+      
       {/* <EntryList entries={this.state.entries} /> */}
     </>
   )

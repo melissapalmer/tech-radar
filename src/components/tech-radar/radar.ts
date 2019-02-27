@@ -24,16 +24,16 @@ type d3g = d3.Selection<SVGGElement, {}, HTMLElement, any>;
 
 // radial_min / radial_max are multiples of PI
 const QUADRANTS = [
-  { radial_min: 0, radial_max: 0.5, factor_x: 1, factor_y: 1, textAnchor: 'end' },
+  { radial_min: 0, radial_max: 0.5, factor_x: 1, factor_y: 1, textAnchor: 'start' },
   { radial_min: 0.5, radial_max: 1, factor_x: -1, factor_y: 1, textAnchor: 'start' },
   { radial_min: -1, radial_max: -0.5, factor_x: -1, factor_y: -1, textAnchor: 'start' },
-  { radial_min: -0.5, radial_max: 0, factor_x: 1, factor_y: -1, textAnchor: 'end' }
+  { radial_min: -0.5, radial_max: 0, factor_x: 1, factor_y: -1, textAnchor: 'start' }
 ];
 
 const ORIGINAL_WIDTH = 1450;
-const ORIGINAL_HEIGHT = 800;
+const ORIGINAL_HEIGHT = 600;
 const LEGEND_OFFSET_Y = 20;
-const LEGEND_OFFSET_X = 20;
+const LEGEND_OFFSET_X = 0;
 const LEGEND_WIDTH = 260;
 
 const TRIANGLE_POINTING_UP = 'M -11,5 11,5 0,-13 z';
@@ -170,10 +170,10 @@ export function showRadar(config: RadarOptions) {
 
   function addQuadandLegend(legendContainer: d3g, quadrantIndex: number, caption: string): void {
     legendContainer.append('text')
-      .attr('transform', translate(
-        MAX_RING_RADIUS * QUADRANTS[quadrantIndex].factor_x,
-        (MAX_RING_RADIUS - 18) * QUADRANTS[quadrantIndex].factor_y,
-      ))
+       .attr('transform', translate(
+         LEGEND_OFFSET[quadrantIndex].x + 10,
+         LEGEND_OFFSET[quadrantIndex].y 
+       ))     
       .attr('text-anchor', QUADRANTS[quadrantIndex].textAnchor)
       .text(caption)
       .style('font-family', 'Arial, Helvetica')
@@ -200,8 +200,8 @@ export function showRadar(config: RadarOptions) {
       dy = dy + 36 + segmentedEntries[quadrantIndex][ringIndex - 1].length * 12;
     }
     return translate(
-      LEGEND_OFFSET[quadrantIndex].x + dx,
-      LEGEND_OFFSET[quadrantIndex].y + dy
+      LEGEND_OFFSET[quadrantIndex].x + dx + 20, 
+      LEGEND_OFFSET[quadrantIndex].y + dy + 20
     );
   }
 

@@ -2,12 +2,12 @@ import { IQuadrant } from '../types/IQuadrant';
 
 export const QUADRANTS: IQuadrant[] = [
   {
-    name: 'Languages & methodologies',
+    name: 'Languages',
     tags: ['q0-languages'],
   },
   {
-    name: 'Infrastructure & utilities',
-    tags: ['q1-infrastructure'],
+    name: 'DevOps',
+    tags: ['q1-devops'],
   },
   {
     name: 'Development tools',
