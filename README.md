@@ -27,7 +27,7 @@ yarn start
 1. configure deployment url
 
 ```bash
-export PUBLIC_URL=https://yaneek.github.io/tech-radar/
+export PUBLIC_URL=https://melissapalmer.github.io/tech-radar/
 ```
 
 2. build

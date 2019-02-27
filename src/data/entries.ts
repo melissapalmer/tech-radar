@@ -2,8 +2,8 @@ import { IEntry } from '../types/IEntry';
 
 export const ALL_ENTRIES: IEntry[] = [
   {
-    'ring': 'ADOPT',
-    'label': 'Cypher',
+    'ring': 'EXPERT',
+    'label': 'Java',
     'link': 'https://neo4j.com/developer/cypher/',
     'tags': [
       'q0-languages',
@@ -13,11 +13,11 @@ export const ALL_ENTRIES: IEntry[] = [
     ],
   },
   {
-    'ring': 'TRIAL',
-    'label': 'GraphQL',
-    'link': 'https://graphql.org/',
+    'ring': 'EXPERT',
+    'label': 'Spring',
+    'link': 'https://spring.io/',
     'tags': [
-      'q1-devops',
+      'q2-frameworks',
       'language',
       'development',
       'design',
@@ -25,9 +25,33 @@ export const ALL_ENTRIES: IEntry[] = [
     ]
   },
   {
-    'ring': 'ASSESS',
-    'label': 'Python',
-    'link': 'https://www.python.org/',
+    'ring': 'EXPERT',
+    'label': 'Docker',
+    'link': 'https://www.docker.com/',
+    'tags': [
+      'q1-infrastructure',
+      'language',
+      'development',
+      'design',
+      'graph',
+    ]
+  }, 
+  {
+    'ring': 'EXPERT',
+    'label': 'Kubernetes',
+    'link': 'https://kubernetes.io/',
+    'tags': [
+      'q1-infrastructure',
+      'language',
+      'development',
+      'design',
+      'graph',
+    ]
+  },
+  {
+    'ring': 'BASIC',
+    'label': 'Go',
+    'link': 'https://golang.org/',
     'tags': [
       'q0-languages',
       'language',
@@ -35,8 +59,19 @@ export const ALL_ENTRIES: IEntry[] = [
     ]
   },
   {
-    'ring': 'HOLD',
-    'label': 'Java',
+    'ring': 'EXPERT',
+    'label': 'PostgreSQL',
+    'link': 'https://www.postgresql.org/',
+    'tags': [
+      'q3-data-management',
+      'language',
+      'development'
+    ]
+  },
+  {
+    'ring': 'EXPERT',
+    'label': 'OAS3 (Swagger)',
+    'link': 'https://www.openapis.org/',
     'tags': [
       'q0-languages',
       'language',

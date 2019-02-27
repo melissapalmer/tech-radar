@@ -6,11 +6,11 @@ export const QUADRANTS: IQuadrant[] = [
     tags: ['q0-languages'],
   },
   {
-    name: 'DevOps',
-    tags: ['q1-devops'],
+    name: 'Infrastructure',
+    tags: ['q1-infrastructure'],
   },
   {
-    name: 'Development tools',
+    name: 'Frameworks',
     tags: ['q2-frameworks'],
   },
   {
